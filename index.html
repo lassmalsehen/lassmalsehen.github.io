@@ -1,14 +1,90 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lassmalsehen-gh-page</title>
-    <script type="module" crossorigin src="/assets/index-BaBB40Qq.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-COcDBgFa.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-de="Willi Reimann - Software Entwicklung & Beratung" data-lang-en="Willi Reimann - Software Development & Consulting"></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Willi Reimann</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-lang-de="Start" data-lang-en="Home"></a></li>
+                    <li><a href="#services" data-lang-de="Leistungen" data-lang-en="Services"></a></li>
+                    <li><a href="#about" data-lang-de="Über mich" data-lang-en="About me"></a></li>
+                    <li><a href="#contact" data-lang-de="Kontakt" data-lang-en="Contact"></a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="language-switcher">
+                <button id="lang-de" class="active">DE</button>
+                <button id="lang-en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2 data-lang-de="Willkommen bei Willi Reimann" data-lang-en="Welcome to Willi Reimann"></h2>
+                <p data-lang-de="Ihr Partner für Software-Beratung und -Entwicklung." data-lang-en="Your partner for software consulting and development."></p>
+                <a href="#contact" class="button" data-lang-de="Kontakt aufnehmen" data-lang-en="Get in Touch"></a>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2 data-lang-de="Meine Leistungen" data-lang-en="My Services"></h2>
+                <div class="service-item">
+                    <h3 data-lang-de="Software-Beratung" data-lang-en="Software Consulting"></h3>
+                    <p data-lang-de="Ich biete umfassende Beratung zu Softwarearchitektur, Technologieauswahl und Prozessoptimierung, um Ihre Projekte erfolgreich zu machen." data-lang-en="I offer comprehensive consulting on software architecture, technology selection, and process optimization to ensure the success of your projects."></p>
+                </div>
+                <div class="service-item">
+                    <h3 data-lang-de="Software-Entwicklung" data-lang-en="Software Development"></h3>
+                    <p data-lang-de="Von der Konzeption bis zur Implementierung entwickle ich maßgeschneiderte Softwarelösungen, die exakt Ihren Anforderungen entsprechen." data-lang-en="From conception to implementation, I develop tailor-made software solutions that precisely meet your requirements."></p>
+                </div>
+                <div class="service-item">
+                    <h3 data-lang-de="Weitere Leistungen" data-lang-en="Additional Services"></h3>
+                    <p data-lang-de="Dies ist ein Platzhalter für weitere spezifische Dienstleistungen, die später hinzugefügt werden können." data-lang-en="This is a placeholder for additional specific services that can be added later."></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 data-lang-de="Über Willi Reimann" data-lang-en="About Willi Reimann"></h2>
+                <p data-lang-de="Mit langjähriger Erfahrung in der Softwarebranche unterstütze ich Unternehmen und Einzelpersonen dabei, ihre digitalen Ziele zu erreichen. Meine Expertise liegt in der Entwicklung robuster und skalierbarer Softwarelösungen sowie in der strategischen Beratung." data-lang-en="With many years of experience in the software industry, I help companies and individuals achieve their digital goals. My expertise lies in developing robust and scalable software solutions and in strategic consulting."></p>
+                <p data-lang-de="Ich arbeite stets lösungsorientiert und lege Wert auf eine klare Kommunikation und transparente Prozesse." data-lang-en="I always work in a solution-oriented manner and value clear communication and transparent processes."></p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 data-lang-de="Kontakt" data-lang-en="Contact"></h2>
+                <p data-lang-de="Sie haben ein Projekt oder eine Frage? Kontaktieren Sie mich gerne für ein unverbindliches Erstgespräch." data-lang-en="Do you have a project or a question? Feel free to contact me for a non-binding initial consultation."></p>
+                <form>
+                    <input type="text" data-lang-de-placeholder="Ihr Name" data-lang-en-placeholder="Your Name" required>
+                    <input type="email" data-lang-de-placeholder="Ihre E-Mail" data-lang-en-placeholder="Your Email" required>
+                    <textarea data-lang-de-placeholder="Ihre Nachricht" data-lang-en-placeholder="Your Message" required></textarea>
+                    <button type="submit" class="button" data-lang-de="Nachricht senden" data-lang-en="Send Message"></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Willi Reimann. <span data-lang-de="Alle Rechte vorbehalten." data-lang-en="All rights reserved."></span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
